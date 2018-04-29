@@ -8,10 +8,25 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hello world! We're freeCodeCamp Toronto." />
+
+    <!-- Card value “summary”, “summary_large_image”, “app”, or “player”-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="https://freecodecampto.github.io/">
+    <!-- Min 120x120px-->
+    <meta name="twitter:image" content="https://cdn.rawgit.com/freeCodeCampTO/freecodecampto.github.io/1290957b/img/freeCodeConf_card.jpg">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="freeCodeCampTO">
+    <!-- Characters max 60-->
+    <title>freeCodeCampTO</title>
+
     <style>
         * {
             margin: 0;
-            padding: 0
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: "Lato";
+            src: url("/fonts/Lato-Regular.woff") format("woff");
         }
 
         body {
@@ -21,23 +36,25 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font: lighter 16px/100% Helvetica, sans-serif;
+            font: lighter 18px/100% "Lato", Helvetica, sans-serif;
         }
 
         h1 {
-            font: lighter 36px/100% Helvetica, sans-serif;
+            font: bold 36px/100% "Lato", Helvetica, sans-serif;
             color: #333;
+            text-shadow: 1px 1px 3px #888;
             margin-bottom: 0.5em;
         }
 
         h2 {
-            font: lighter 28px/100% Helvetica, sans-serif;
+            font: lighter 28px/100% "Lato", Helvetica, sans-serif;
             color: #333;
+            text-shadow: 1px 1px 3px #888;
             margin-bottom: 0.5em;
         }
 
         p {
-            margin: 0 0.5em;
+            margin: 0.5em 0;
         }
 
         div {
@@ -50,7 +67,7 @@
 
         #logo {
             border-radius: 50%;
-            box-shadow: 1px 2px 5px #333;
+            box-shadow: 1px 3px 10px #333;
         }
 
         #text {
@@ -62,23 +79,36 @@
 
 <body>
     <div>
-        <img id="logo" width="250px" height="250px" src="/fccTO_500.png">
+        <img id="logo" width="200px" height="200px" src="/img/fccTO_500.png">
     </div>
 
     <div id="text">
         <h1>freeCodeCampTO</h1>
 
-        <h2>Learn to code with local campers every Saturday</h2>
+        <h2>Learn to code with local campers every Saturday in Toronto!</h2>
 
         <p>The Toronto chapter of
-            <a href="" target="_blank" rel="noopener">freeCodeCamp</a> meets every Saturday from 1-4pm. Join us and get live coding help from a friendly community
-            of self-taught coders.
+            <a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp</a> meets every Saturday from 1-4pm. </p>
+        <p>Join us and get live coding help from a friendly community of self-taught coders!
         </p>
+    </div>
+    <div>
+
+        <h2>We meet at:</h2>
+        <p>Devhub
+            <br>46 Spadina Ave - 4th Floor
+            <br> Toronto, ON</p>
     </div>
 
     <div id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1701221629814!2d-79.3973859838036!3d43.644628761001634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9722eda7b%3A0x4f8d732be5859e7f!2s46+Spadina+Ave%2C+Toronto%2C+ON+M5V+2H8!5e0!3m2!1sen!2sca!4v1524943540914"
             width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div id="text">
+        <p>Want to help improve this page? Submit a
+            <a href="https://github.com/freeCodeCampTO/freecodecampto.github.io" target="_blank"
+                rel="noopener">pull request</a>!</p>
     </div>
 
 </body>
